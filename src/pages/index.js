@@ -38,11 +38,9 @@ export default function Home() {
         edges {
           node {
             frontmatter {
+              slug
               title
               date
-            }
-            fields {
-              slug
             }
           }
         }
@@ -55,7 +53,7 @@ export default function Home() {
       <BlogList>
         {data.allMarkdownRemark.edges.map(edge => (
           <li>
-            <Link to={`/${edge.node.fields.slug}`}>
+            <Link to={edge.node.frontmatter.slug}>
               <h2>{edge.node.frontmatter.title}</h2>
               <p>{edge.node.frontmatter.date}</p>
             </Link>

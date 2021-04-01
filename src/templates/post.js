@@ -6,10 +6,11 @@ import Head from '../components/head'
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       frontmatter {
+        slug
         title
-        date
+        date(formatString: "MMMM DD, YYYY")
       }
       html
     }

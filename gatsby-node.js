@@ -1,17 +1,4 @@
 const path = require('path')
-//create slugs from filenames
-module.exports.onCreateNode = ({ node, actions }) => {
-  const { createNodeField } = actions
-
-  if (node.internal.type === 'MarkdownRemark') {
-    const slug = path.basename(node.fileAbsolutePath, '.md')
-    createNodeField({
-      node,
-      name: 'slug',
-      value: slug,
-    })
-  }
-}
 
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
@@ -19,10 +6,13 @@ module.exports.createPages = async ({ graphql, actions }) => {
 
   const res = await graphql(`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 1000
+      ) {
         edges {
           node {
-            fields {
+            frontmatter {
               slug
             }
           }
@@ -30,13 +20,17 @@ module.exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
+  if (res.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
 
   res.data.allMarkdownRemark.edges.forEach(edge => {
     createPage({
       component: postTemplate,
-      path: `/${edge.node.fields.slug}`,
+      path: edge.node.frontmatter.slug,
       context: {
-        slug: edge.node.fields.slug,
+        slug: edge.node.frontmatter.slug,
       },
     })
   })

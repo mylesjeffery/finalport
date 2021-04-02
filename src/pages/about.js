@@ -8,14 +8,14 @@ import Head from '../components/head'
 export default function About() {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "img/IMG_1966.JPG" }) {
+      file(relativePath: { eq: "img_1966.jpg" }) {
         childImageSharp {
           fluid {
+            src
+            srcSet
             aspectRatio
             base64
             sizes
-            src
-            srcSet
           }
         }
       }

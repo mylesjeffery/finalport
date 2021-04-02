@@ -11,6 +11,8 @@ collections:
     folder: 'posts'
     create: true
     slug: 'index'
+    media_folder: img
+    public_folder: /img
     path: '{{title}}/index'
     editor:
       preview: false

@@ -45,13 +45,16 @@ export default function Header() {
         <ul>
           <li>
             <Link to="/" activeClassName="active-nav-item">
-              Home
+              Work
             </Link>
           </li>
           <li>
             <Link to="/about" activeClassName="active-nav-item">
               About
             </Link>
+          </li>
+          <li>
+            <a href="mailto:mylesjeffery96@gmail.com">Email</a>
           </li>
         </ul>
       </nav>

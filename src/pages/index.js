@@ -40,7 +40,7 @@ export default function Home() {
             frontmatter {
               slug
               title
-              date
+              date(formatString: "MMMM DD, YYYY")
             }
           }
         }

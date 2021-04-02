@@ -204,7 +204,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  color: hsla(0, 0%, 0%, .8);
   font-family: sans-serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -213,6 +213,12 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+}
+a {
+  color: hsla(0, 0%, 0%, .8);
+  &:hover {
+    text-decoration: none;
+  }
 }
 img {
   max-width: 100%;
@@ -392,6 +398,17 @@ p {
   margin-bottom: 1.45rem;
 }
 figure {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+}
+figcaption {
+  font-size: .9rem;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;

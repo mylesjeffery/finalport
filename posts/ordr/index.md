@@ -3,6 +3,7 @@ slug: /ordr
 title: Ordr
 date: 2020-03-18T22:20:01.574Z
 description: Bringing Ordr to Chaos
+feature: /img/ordrbillboard2.jpg
 ---
 Ordr is a nightlife app designed to streamline the experience of a night out, providing less hassle and more fun. Users can pay bar covers or buy tickets for club events, and order drinks from their phone. No more queueing outside in the cold, trips to the ATM, or struggling to catch the bartender's attention in a packed bar.\
 \

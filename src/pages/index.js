@@ -1,6 +1,7 @@
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
+import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
 import Head from '../components/head'
@@ -41,6 +42,7 @@ export default function Home() {
               slug
               title
               date(formatString: "MMMM DD, YYYY")
+              feature
             }
           }
         }
@@ -56,6 +58,10 @@ export default function Home() {
             <Link to={edge.node.frontmatter.slug}>
               <h2>{edge.node.frontmatter.title}</h2>
               <p>{edge.node.frontmatter.date}</p>
+              <Img
+                src={edge.node.frontmatter.feature}
+                alt={edge.node.frontmatter.title}
+              />
             </Link>
           </li>
         ))}

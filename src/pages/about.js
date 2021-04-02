@@ -99,6 +99,12 @@ export default function About() {
           💪
         </span>
       </h2>
+      <h3>Chingu Voyage 28</h3>
+      <h4>February → April 2021</h4>
+      <p>
+        I worked with two other developers via the Chingu platform to build a
+        wild edible mushroom locator.
+      </p>
       <h3>Freelance Designer </h3>
       <h4>2019 → Present</h4>
       <p>

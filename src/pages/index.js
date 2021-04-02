@@ -24,7 +24,7 @@ const BlogList = styled.ol`
     h2 {
       margin-bottom: 0;
     }
-    p {
+    .date {
       color: #777777;
       font-size: 1rem;
       font-style: italic;
@@ -42,7 +42,18 @@ export default function Home() {
               slug
               title
               date(formatString: "MMMM DD, YYYY")
-              feature
+              description
+              feature {
+                childImageSharp {
+                  fluid {
+                    aspectRatio
+                    base64
+                    sizes
+                    src
+                    srcSet
+                  }
+                }
+              }
             }
           }
         }
@@ -54,12 +65,13 @@ export default function Home() {
       <Head title="Home" />
       <BlogList>
         {data.allMarkdownRemark.edges.map(edge => (
-          <li>
+          <li key={edge.node.frontmatter.slug}>
             <Link to={edge.node.frontmatter.slug}>
               <h2>{edge.node.frontmatter.title}</h2>
-              <p>{edge.node.frontmatter.date}</p>
+              <p className="date">{edge.node.frontmatter.date}</p>
+              <p className="description">{edge.node.frontmatter.description}</p>
               <Img
-                src={edge.node.frontmatter.feature}
+                fluid={edge.node.frontmatter.feature.childImageSharp.fluid}
                 alt={edge.node.frontmatter.title}
               />
             </Link>

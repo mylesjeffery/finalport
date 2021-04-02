@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: posts/img
+media_folder: static/img
 public_folder: /img
 
 collections:
@@ -11,7 +11,7 @@ collections:
     folder: 'posts'
     create: true
     slug: 'index'
-    media_folder: img
+    media_folder: ../../static/img
     public_folder: /img
     path: '{{title}}/index'
     editor:

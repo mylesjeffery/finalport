@@ -1,12 +1,12 @@
 import { Link, graphql, useStaticQuery } from 'gatsby'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
 import Head from '../components/head'
 
-const BlogList = styled.ol`
+const PostList = styled.ol`
   list-style-type: none;
   margin: 0;
   li {
@@ -74,7 +74,7 @@ export default function Home() {
   return (
     <Layout>
       <Head title="Home" />
-      <BlogList>
+      <PostList>
         {data.allMarkdownRemark.edges.map(edge => (
           <li key={edge.node.frontmatter.slug}>
             <Link to={edge.node.frontmatter.slug}>
@@ -97,7 +97,7 @@ export default function Home() {
             </Link>
           </li>
         ))}
-      </BlogList>
+      </PostList>
     </Layout>
   )
 }

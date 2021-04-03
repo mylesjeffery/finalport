@@ -1,5 +1,7 @@
 ---
 slug: /ordr
+tags:
+  - Design
 title: Ordr
 date: 2021-04-01T20:36:38.557Z
 description: "Branding and UX project - an app that streamlines the experience

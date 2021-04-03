@@ -6,7 +6,7 @@ title: Ordr
 date: 2021-04-01T20:36:38.557Z
 description: "Branding and UX project - an app that streamlines the experience
   of going out, from getting in the door to ordering drinks. "
-feature: /img/postermockup2.jpg
+feature: /img/ordrbillboard2.jpg
 ---
 Ordr is a nightlife app designed to streamline the experience of a night out, providing less hassle and more fun. Users can pay bar covers or buy tickets for club events, and order drinks from their phone. No more queueing outside in the cold, trips to the ATM, or struggling to catch the bartender's attention in a packed bar.\
 \

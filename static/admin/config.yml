@@ -15,7 +15,7 @@ collections:
     public_folder: /img
     path: '{{title}}/index'
     editor:
-      preview: true
+      preview: false
     fields:
       - { label: 'Slug', name: 'slug', widget: 'string' }
       - {

@@ -10,6 +10,7 @@ const BlogList = styled.ol`
   list-style-type: none;
   margin: 0;
   li {
+    position: relative;
     margin: 1rem 0;
     a {
       background: #f4f4f4;
@@ -29,6 +30,15 @@ const BlogList = styled.ol`
       font-size: 1rem;
       font-style: italic;
     }
+    .tags {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      margin: 0;
+      span {
+        color: #777777;
+      }
+    }
   }
 `
 
@@ -43,6 +53,7 @@ export default function Home() {
               title
               date(formatString: "MMMM DD, YYYY")
               description
+              tags
               feature {
                 childImageSharp {
                   fluid {
@@ -69,6 +80,15 @@ export default function Home() {
             <Link to={edge.node.frontmatter.slug}>
               <h2>{edge.node.frontmatter.title}</h2>
               <p className="date">{edge.node.frontmatter.date}</p>
+              <p className="tags">
+                {edge.node.frontmatter.tags.map((tag, i) => {
+                  if (edge.node.frontmatter.tags.length === i + 1) {
+                    return <span key={tag}>{tag}</span>
+                  } else {
+                    return <span key={tag}>{tag}, </span>
+                  }
+                })}
+              </p>
               <p className="description">{edge.node.frontmatter.description}</p>
               <Img
                 fluid={edge.node.frontmatter.feature.childImageSharp.fluid}

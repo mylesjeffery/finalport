@@ -13,7 +13,7 @@ const BlogList = styled.ol`
     margin: 1rem 0;
     a {
       background: #f4f4f4;
-      color: #000000;
+      color: hsla(0, 0%, 0%, 0.8);
       display: block;
       padding: 1rem;
       text-decoration: none;

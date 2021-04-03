@@ -15,9 +15,17 @@ collections:
     public_folder: /img
     path: '{{title}}/index'
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Slug', name: 'slug', widget: 'string' }
+      - {
+          label: 'Tags',
+          name: 'tags',
+          widget: 'select',
+          multiple: true,
+          min: 1,
+          options: ['Design', 'Development', 'Writing', 'Photography'],
+        }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }

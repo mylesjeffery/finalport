@@ -8,7 +8,7 @@ const PostList = styled.ol`
   margin: 0;
   li {
     position: relative;
-    margin: 1rem 0;
+    margin: 3rem 0;
     a {
       background: #f4f4f4;
       color: hsla(0, 0%, 0%, 0.8);
@@ -26,6 +26,7 @@ const PostList = styled.ol`
       color: #777777;
       font-size: 1rem;
       font-style: italic;
+      margin-top: 0.4rem;
     }
     .tags {
       position: absolute;
@@ -42,7 +43,7 @@ const PostList = styled.ol`
 export default function Posts({ filter }) {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
         edges {
           node {
             frontmatter {

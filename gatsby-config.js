@@ -26,6 +26,13 @@ module.exports = {
         name: 'images',
       },
     },
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/admin`,
+      },
+    },
     {
       resolve: `gatsby-plugin-netlify-cms-paths`,
       options: {

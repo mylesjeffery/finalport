@@ -34,7 +34,8 @@ export default function About() {
         graduating college in spring of 2020, COVID19 was setting in. I decided
         to devote 2020 to learning front end development, as I had studied UX
         design in school and had a basic understanding of HTML and CSS.{' '}
-        <Link to="/">Read more about that here.</Link> <br></br>
+        <Link to="/learning-frontend">Read more about that here.</Link>{' '}
+        <br></br>
       </p>
       <p>
         If you have any questions about my work or would like to chat, feel free

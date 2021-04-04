@@ -33,9 +33,7 @@ const PostList = styled.ol`
       top: 1rem;
       right: 1rem;
       margin: 0;
-      span {
-        color: #777777;
-      }
+      color: #777777;
     }
   }
 `

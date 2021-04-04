@@ -15,6 +15,6 @@ I designed an intuitive user experience that guides one through the necessary hu
 
 [Interactive Mockup](https://www.figma.com/proto/PTWdKGQK7EugZPUI6LxX2TqU/Ordr?node-id=374%3A0&viewport=-2657%2C396%2C0.48360538482666016&scaling=scale-down)
 
-![ordr billboard](/img/ordrbillboard2.jpg)
+
 
 ![](/img/postermockup2.jpg)

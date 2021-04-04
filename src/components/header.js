@@ -21,6 +21,7 @@ const HeaderContainer = styled.header`
   }
   .active-nav-item {
     color: #000000;
+    cursor: default;
     &:hover {
       color: #000000;
     }

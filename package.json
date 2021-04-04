@@ -27,6 +27,7 @@
     "gatsby-source-filesystem": "^3.2.0",
     "gatsby-transformer-remark": "^3.2.0",
     "gatsby-transformer-sharp": "^3.2.0",
+    "gatsby-transformer-yaml": "^3.2.0",
     "netlify-cms-app": "^2.14.35",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

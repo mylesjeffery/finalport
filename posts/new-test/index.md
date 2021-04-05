@@ -11,22 +11,16 @@ feature: /img/ordrbillboard2.jpg
 ---
 Ordr is a nightlife app designed to streamline the experience of a night out, providing less hassle and more fun. Users can pay bar covers or buy tickets for club events, and order drinks from their phone. No more queueing outside in the cold, trips to the ATM, or struggling to catch the bartender's attention in a packed bar.\
 \
-I designed an intuitive user experience that guides one through the necessary hurdles of a night out, giving the user more time for what's important– fun. I came up with a brand identity & strategy that simultaneously evokes a sense of mysterious intrigue, and adventurous fun.
+I designed an intuitive user experience that guides one through the necessary hurdles of a night out, giving the user more time for what's important– fun. I came up with a brand identity & strategy that simultaneously evokes a sense of mysterious intrigue, and adventure.
 
 [Interactive Mockup](https://www.figma.com/proto/PTWdKGQK7EugZPUI6LxX2TqU/Ordr?node-id=374%3A0&viewport=-2657%2C396%2C0.48360538482666016&scaling=scale-down)
 
+<video width="750" loop controls autoplay>
+ <source src="https://dl.dropboxusercontent.com/s/tl6iyyn7vf9z1ui/ordrFINAL%20%281%29.mp4" type="video/mp4"></source>
+ <track></track>
+ Your browser does not support the video tag.
+</video>
+
+
+
 ![](/img/postermockup2.jpg)
-
-```
-<video width="750" autoplay loop controls>
- <source src="https://dl.dropboxusercontent.com/s/tl6iyyn7vf9z1ui/ordrFINAL%20%281%29.mp4" type="video/mp4"></source>
- <track></track>
- Your browser does not support the video tag.
-</video>
-```
-
-<video width="750" autoplay loop controls>
- <source src="https://dl.dropboxusercontent.com/s/tl6iyyn7vf9z1ui/ordrFINAL%20%281%29.mp4" type="video/mp4"></source>
- <track></track>
- Your browser does not support the video tag.
-</video>

@@ -24,3 +24,9 @@ I designed an intuitive user experience that guides one through the necessary hu
  Your browser does not support the video tag.
 </video>
 ```
+
+<video width="750" autoplay loop controls>
+ <source src="https://dl.dropboxusercontent.com/s/tl6iyyn7vf9z1ui/ordrFINAL%20%281%29.mp4" type="video/mp4"></source>
+ <track></track>
+ Your browser does not support the video tag.
+</video>

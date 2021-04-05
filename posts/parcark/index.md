@@ -20,3 +20,13 @@ My task was to design an integrated brand identity and user experience, that was
 <video autoplay loop controls width=100%>
     <source src="https://dl.dropboxusercontent.com/s/96bk9gtbnm95v0n/parcark.mp4" type="video/mp4">   <track></track>
 </video>
+
+
+
+For Parcark's branding, I aimed to design a playful, friendly, and simple identity, with clear connotations of driving. The animated logo features the word "car" parking itself in the word Parcark, illustrating the function of the app.\
+\
+The name "Parcark" is a slang work used by Brits to call a car-park (their term for a parking lot). The main logo contains an abstracted capital "P" with an arrow pointing to the right implying the pulling over to park, similar to a road sign. The bold yellow and black colors also symbolize the road. For the "Parcark" type, I chose a semi-bold Poppins typeface, as its geometric sans-serif simplicity has a friendly familiarity.
+
+<video autoplay loop controls width=100%>
+    <source src="https://dl.dropboxusercontent.com/s/kf02na9b5qsrzfi/Comp%201.mp4?dl=0" type="video/mp4">   <track></track>
+</video>

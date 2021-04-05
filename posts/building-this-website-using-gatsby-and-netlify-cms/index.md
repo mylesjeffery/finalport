@@ -2,7 +2,6 @@
 slug: gatsby-portfolio
 tags:
   - Development
-  - Writing
 title: Building this Website with GatsbyJS
 date: 2021-04-05T15:48:33.498Z
 description: "I built this portfolio website to show my work, and took it as a

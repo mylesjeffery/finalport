@@ -34,6 +34,13 @@ const PostList = styled.ol`
       right: 1rem;
       margin: 0;
       color: #777777;
+      @media (max-width: 800px) {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+      }
     }
   }
 `

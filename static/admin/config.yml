@@ -24,7 +24,7 @@ collections:
           widget: 'select',
           multiple: true,
           min: 1,
-          options: ['UX', 'Brand', 'Development', 'Writing', 'Photography'],
+          options: ['UX', 'Brand', 'Development', 'Writing'],
         }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }

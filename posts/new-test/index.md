@@ -19,18 +19,18 @@ I designed an intuitive user experience that guides one through the necessary hu
  <source src="https://dl.dropboxusercontent.com/s/tl6iyyn7vf9z1ui/ordrFINAL%20%281%29.mp4" type="video/mp4"></source>
  <track></track>
  Your browser does not support the video tag.
-</video>\
-\
-To research this project, I went through the experience of going out, drew upon my past experiences, and interviewed friends to see what the primary features of the app should be.\
-\
+</video>
+
+To research this project, I went through the experience of going out, drew upon my past experiences, and interviewed friends to see what the primary features of the app should be.
+
 I found that there were three areas of the experience that had opportunities to be streamlined: first, finding the right venue to go to. In a big city, there are so many options of where to spend a night out that it can be overwhelming at first, and there isn't a specific resource for bars & clubs. Second, once the user has actually found a venue they want to go to, actually getting into the bar or club can be a struggle. If there is a line outside, or there is a cover, the user should be able to find that information out before getting to the venue. And third, actually ordering drinks once inside. In many bars and clubs, the music can be very loud making communication with the bartender difficult. Opening and closing tabs is an unnecessary hassle that inconveniences the user and bartender.
 
-After gathering my research, I wrote down the core functionalities the app needed to have.\
+After gathering my research, I wrote down the core functionalities the app needed to have.
 
-1. Nearby bars browsing with filters for type of venue, cover/no cover, busy-ness, and rating.\
-2. Apple-pay cover system, user pays cover and receives QR Code in app to scan with bouncer.\
-3. Menu and drink ordering via Apple-pay.\
-4. Ordr number system where user receives wait time info and notifies user when it's time to pick up.\
+1. Nearby bars browsing with filters for type of venue, cover/no cover, busy-ness, and rating.
+2. Apple-pay cover system, user pays cover and receives QR Code in app to scan with bouncer.
+3. Menu and drink ordering via Apple-pay.
+4. Ordr number system where user receives wait time info and notifies user when it's time to pick up.
 5. Large number display for signaling to bartender where user is located in bar.
 
 I developed a prototype of the app in Figma, to demonstrate the user experience and convey how the app would look and feel. I aimed to guide the user through the experience, never showing more information than was necessary.\

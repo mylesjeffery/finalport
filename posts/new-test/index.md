@@ -15,6 +15,12 @@ I designed an intuitive user experience that guides one through the necessary hu
 
 [Interactive Mockup](https://www.figma.com/proto/PTWdKGQK7EugZPUI6LxX2TqU/Ordr?node-id=374%3A0&viewport=-2657%2C396%2C0.48360538482666016&scaling=scale-down)
 
-
-
 ![](/img/postermockup2.jpg)
+
+```
+<video width="750" autoplay loop controls>
+ <source src="https://dl.dropboxusercontent.com/s/tl6iyyn7vf9z1ui/ordrFINAL%20%281%29.mp4" type="video/mp4"></source>
+ <track></track>
+ Your browser does not support the video tag.
+</video>
+```

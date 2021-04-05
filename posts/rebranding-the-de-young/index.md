@@ -17,4 +17,24 @@ The de Young is one of two museums organized by the Fine Arts Museums of San Fra
 \
 I identified three themes to work around: diversity, materiality, and universality.
 
-![](https://uploads-ssl.webflow.com/5e55af470a9ef4337ccf36b2/5e55af470a9ef42fd4cf3766_Asset%2016.svg)
+![dy logo](https://uploads-ssl.webflow.com/5e55af470a9ef4337ccf36b2/5e55af470a9ef42fd4cf3766_Asset%2016.svg)
+
+The inspiration for the de Young logo came from the materiality of the museum. I referenced the architecture of the de Young's iconic Hamon Observation Tower(pictured above), with the angled "Y", as the tower twists and creates a Y shape.\
+\
+Further referencing the structure of the building, I placed the text on off-center orange blocks, evoking an architectural feeling. I chose orange as the default color of the blocks, as it references the copper exterior of the museum.\
+\
+Helvetica Neue Bold was used as the base typeface, as it has a universality & adaptability to many different contexts.
+
+![hamon observation tower](/img/dy.jpeg)
+
+![](/img/cover.jpg)
+
+![](/img/dybillboard.jpeg)
+
+![](/img/dytote.jpeg)
+
+
+
+![](/img/dycoffee.jpeg)
+
+![](/img/dycard.jpeg)

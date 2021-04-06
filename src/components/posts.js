@@ -5,10 +5,10 @@ import Img from 'gatsby-image'
 
 const PostList = styled.ol`
   list-style-type: none;
-  margin: 0;
+  margin: 3rem 0;
   li {
     position: relative;
-    margin: 3rem 0;
+    margin-bottom: 3rem;
     a {
       background: #f4f4f4;
       color: hsla(0, 0%, 0%, 0.8);
@@ -38,9 +38,12 @@ const PostList = styled.ol`
         position: relative;
         top: 0;
         right: 0;
-        margin-top: -1rem;
+        margin-top: 1rem;
         margin-bottom: 1rem;
       }
+    }
+    .description {
+      margin-top: 1rem;
     }
   }
 `
@@ -81,7 +84,7 @@ export default function Posts({ filter }) {
             <li key={edge.node.frontmatter.slug}>
               <Link to={edge.node.frontmatter.slug}>
                 <h2>{edge.node.frontmatter.title}</h2>
-                <p className="date">{edge.node.frontmatter.date}</p>
+
                 <p className="tags">
                   {edge.node.frontmatter.tags.map((tag, i) => {
                     if (edge.node.frontmatter.tags.length === i + 1) {

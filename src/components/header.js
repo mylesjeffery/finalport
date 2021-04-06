@@ -1,24 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 
 const HeaderContainer = styled.header`
   padding: 1rem 0 3rem;
 
+  h1 {
+    cursor: default;
+  }
+
   ul {
     display: flex;
     list-style-type: none;
     margin: 0;
   }
-
-  a {
-    color: #999999;
-    text-decoration: none;
-    margin-right: 1.3rem;
-    &:hover {
-      color: #666666;
+  nav {
+    a {
+      color: #999999;
+      text-decoration: none;
+      margin-right: 1.3rem;
+      &:hover {
+        color: #666666;
+      }
     }
   }
+
   .active-nav-item {
     color: #000000;
     cursor: default;
@@ -28,7 +34,9 @@ const HeaderContainer = styled.header`
   }
 `
 
-export default function Header() {
+export default function Header({ about }) {
+  const [job, setJob] = useState(['designer', 'codes'])
+
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -39,9 +47,19 @@ export default function Header() {
       }
     }
   `)
+
+  function mouseEnter() {
+    setJob(['developer', 'designs'])
+  }
+  function mouseLeave() {
+    setJob(['designer', 'codes'])
+  }
+
   return (
     <HeaderContainer>
-      <h1>{data.site.siteMetadata.title}</h1>
+      <h1 onMouseEnter={() => mouseEnter()} onMouseLeave={() => mouseLeave()}>
+        {data.site.siteMetadata.title} is a {job[0]} who {job[1]}.
+      </h1>
       <nav>
         <ul>
           <li>

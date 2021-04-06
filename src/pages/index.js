@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { Layout, Head, Tags, Posts } from '../components'
+import { Layout, Head, Howdy, Posts } from '../components'
 
 export default function Home() {
   const [filter, setFilter] = useState([])
@@ -19,12 +19,13 @@ export default function Home() {
   return (
     <Layout>
       <Head title="Home" />
-      <Tags
+      <Howdy />
+      {/* <Tags
         filter={filter}
         setFilter={setFilter}
         addTag={addTag}
         removeTag={removeTag}
-      />
+      /> */}
       <Posts filter={filter} />
     </Layout>
   )

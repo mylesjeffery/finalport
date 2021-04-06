@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, Link, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 
-import { Layout, Head } from '../components'
+import { Layout, Head, Howdy } from '../components'
 
 export default function About() {
   const data = useStaticQuery(graphql`
@@ -23,29 +23,10 @@ export default function About() {
   return (
     <Layout>
       <Head title="About" />
-      <h1>
-        Howdy! I'm Myles.{' '}
-        <span role="img" aria-label="emoji">
-          🤠
-        </span>{' '}
-      </h1>
-      <p>
-        I’m a designer and developer living in the San Francisco Bay Area. After
-        graduating college in spring of 2020, COVID19 was setting in. I decided
-        to devote 2020 to learning front end development, as I had studied UX
-        design in school and had a basic understanding of HTML and CSS.{' '}
-        <Link to="/learning-frontend">Read more about that here.</Link>{' '}
-        <br></br>
-      </p>
-      <p>
-        If you have any questions about my work or would like to chat, feel free
-        to <a href="mailto:mylesjeffery96@gmail.com">reach out</a>!
-      </p>
-      <br></br>
-
+      <Howdy />
       <Img fluid={data.file.childImageSharp.fluid} alt="Me" />
       <figcaption>
-        <em>note: my brick under the Trustworthiness & Respect brick</em>
+        <em>just another brick in the wall...</em>
       </figcaption>
       <br></br>
 
@@ -184,15 +165,6 @@ export default function About() {
             rel="noreferrer"
           >
             Github
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.instagram.com/mylesjeffery/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Instagram
           </a>
         </li>
       </ul>

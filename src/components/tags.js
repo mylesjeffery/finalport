@@ -9,12 +9,14 @@ const TagsList = styled.ul`
   margin: 0;
   margin-top: -2.5rem;
   margin-bottom: 2rem;
+  li {
+    margin-right: 1.3rem;
+  }
   button {
     color: #999999;
     padding: 0;
     background-color: rgba(0, 0, 0, 0);
     border: none;
-    margin-right: 1.3rem;
     cursor: pointer;
     &:hover {
       color: #666666;

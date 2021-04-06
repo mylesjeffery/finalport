@@ -10,12 +10,7 @@ const Main = styled.main`
   .feature {
     margin-bottom: 3rem;
   }
-  .date {
-    color: #777777;
-    font-size: 1rem;
-    font-style: italic;
-    margin-top: 0.4rem;
-  }
+
   .tags {
     color: #777777;
   }
@@ -53,7 +48,6 @@ export default function Post({ data }) {
       <Head title={data.markdownRemark.frontmatter.title} />
       <Main>
         <h1>{data.markdownRemark.frontmatter.title}</h1>
-        <p className="date">{data.markdownRemark.frontmatter.date}</p>
         <p className="tags">
           {data.markdownRemark.frontmatter.tags.map((tag, i) => {
             if (data.markdownRemark.frontmatter.tags.length === i + 1) {

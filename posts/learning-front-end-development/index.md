@@ -1,8 +1,8 @@
 ---
-slug: learning-frontend
+slug: front-end-developer
 tags:
   - Development
-title: Learning Front End Development
+title: Becoming A Front End Developer
 date: 2021-04-04T18:41:46.810Z
 description: "My experience learning javascript and react over the last year,
   featuring projects I built on the way and what I learned from them,
@@ -10,27 +10,23 @@ description: "My experience learning javascript and react over the last year,
   styled-components. "
 feature: /img/why-use-react-instead-of-javascript-html-and-css.jpeg
 ---
-After graduating school in the spring of 2020 just as COVID locked down the country, I knew my job prospects right out of college would probably have to be put on hold for the time being, so I moved back home and decided to devote the next year to learning front end development. 
+After graduating from Parsons in the spring of 2020 the world suddenly changed! The COVID lock down had started. No one was hiring graduates at that time, so I moved back home to the Bay Area.
 
-I studied Integrated Design in school, which focused around branding and user experience design, as I'm passionate about creating engaging digital experiences that evoke a brand's identity through typography, layout, and interaction in web design. 
+I've always entertained the idea that I'd like to be able to take a project from concept, through ideation, design, flesh out the user flows and interactions; right through development and into production for real use by real end users.  I already had a strong grounding in the design part of the process, but I didn't have the developer skills necessary for a full scale application.  I decided to take advantage of the lockdowns and set out to learn Front End Development, devoting my days to understanding the foundational building blocks of the web.
 
-I wanted to learn front end development to complete the picture: the ability to envision an identity, design a website that is intuitive while expressing that identity, and then develop that website myself. This way I could take a project from paper to production, and have a big picture view of a project while still maintaining the ability to zoom in and work effectively in each stage. 
+I had taken a basic web development class in college that was mostly HTML and CSS, which I felt pretty comfortable with. I was also familiar with the platform Webflow, which is a website design tool that uses HTML and CSS, as I had designed my previous portfolio with it. However the dynamic websites and applications that I want to build require javascript and a front end frameworks such as React, React Native, Angular, Vue etc, APIs and backend services. There is a lot to learn and many many tools and frameworks.
 
-I had taken a basic web development class in school that was just HTML and CSS, which I felt pretty comfortable with. I had also been using the platform Webflow, which is a website design tool that uses HTML and CSS, so you effectively code visually. However, I wanted to learn javascript and React, as they would give me far more ability to produce dynamic, engaging websites than simple HTML and CSS.
+I followed Scrimba's [Front End Developer Pathway](https://scrimba.com/learn/frontend), as I liked the ability to pause the screencast and dive right into the code in the browser, as opposed to having VS Code on one side of my screen copying everything the video was doing on the right. I felt that it gave me a better understanding of the code when I could engage with it directly and play with it.
 
-I followed the Scrimba platform's [Front End Developer Pathway](https://scrimba.com/learn/frontend), as I liked the ability to pause the screencast and dive right into the code in the browser, as opposed to having VS Code on one side of my screen copying everything the video was doing on the right. I felt that it gave me a better understanding of the code when I could engage with it directly and play with it.
-
-
+These are a few projects I built along the way, and what I learned from each of them.
 
 ## Javascript Carousel
 
-[Live Demo](https://amazing-mcnulty-f8a512.netlify.app/)
+[Live Demo](https://mylesjeffery-carousel.netlify.app/)
 
 [Github Repo](https://github.com/mylesjeffery/carousel)
 
 This project introduced me to manipulating elements in the DOM with javascript via the carousel. It was accomplished by adding a class, "carousel-item-visible" and removing class "carousel-item-hidden", based on the index of the slide, which if is at the end of the list of slides, goes back to the first slide. 
-
-
 
 ## Javascript Pacman
 
@@ -40,8 +36,6 @@ This project introduced me to manipulating elements in the DOM with javascript v
 
 It's a little bit clunky, but it's a fully functional Pacman all in vanilla javascript. It uses css-grid to display the game, and moves Pacman around based on user input with the arrow keys. It works by adding and removing classes from each square of the grid when the user inputs or the ghosts move. 
 
-
-
 ## Punk API Beer App
 
 [Live Demo](https://mylesjeffery-beer.netlify.app/)
@@ -49,8 +43,6 @@ It's a little bit clunky, but it's a fully functional Pacman all in vanilla java
 [Github Repo](https://github.com/mylesjeffery/my-beer-app/blob/main/main.js)
 
 This was my introduction to fetching data from an API using async and await. It uses the Punk Beer API, which  returns JSON with a bunch of draft beer brands. The user can filter for alcohol content and hoppiness, on three levels each. It also has pagination! 
-
-
 
 ## React Movie Search App
 
@@ -60,15 +52,15 @@ This was my introduction to fetching data from an API using async and await. It 
 
 My first project in React, with higher order components, fetching data from an API, using a form to search. It was my introduction to useState, and my first time writing JSX. This opened my eyes to the potential of React to create interactive, dynamic applications.
 
-
-
-## React Netflix Clone with Authentication (Firebase), Live Search, and styled-components
+## React Netflix Clone with Authentication (Firebase), Live Search,  styled-components, and Testing with react-testing-library
 
 [Live Demo](https://mylesjeffery-netflixclone.netlify.app)
 
 [Github Repo](https://github.com/mylesjeffery/netflix-clone)
 
-For this project I followed [this 10 hour long tutorial](https://www.youtube.com/watch?v=x_EEwGe-a9o&t=4085s&ab_channel=KarlHadwen), and expanded on it by styling it to be responsive to any screen size. It taught me a lot about React and how to structure applications, using styled-components to use CSS-in-JS modularly, and how to integrate user authentication using Google's Firebase. The movie and TV show data was stored in Firebase's Firestore. I learned how to use react-router to hide the browse content until the user signs up or signs in, and built custom hooks to manage context and authentication. useState, useContext, useEffect, useRef, and more react hooks were used. It included a live-search functionality, which, when the user types in, automatically loads the results and brings the show or movie to the top of the list. 
+![netflix](/img/netflix.jpg)
+
+For this project I followed [this 10 hour long tutorial](https://www.youtube.com/watch?v=x_EEwGe-a9o&t=4085s&ab_channel=KarlHadwen), and expanded on it by styling it to be responsive to any screen size. It taught me a lot about React and how to structure applications, using styled-components to use CSS-in-JS modularly, and how to integrate user authentication using Google's Firebase. The movie and TV show data was stored in Firebase's Firestore. I learned how to use react-router to hide the browse content until the user signs up or signs in, and built custom hooks to manage context and authentication. useState, useContext, useEffect, useRef, and more react hooks were used. It included a live-search functionality, which, when the user types in, automatically loads the results and brings the show or movie to the top of the list. The tutorial also taught me how to use react-testing-library to test the app, describing components and see if they render elements correctly, as well as firing events and testing their functionality.
 
 I realized the app wasn't responsive, as the tiles just stayed the same size no matter the viewport width. The rows of content also didn't have the slider functionality that Netflix has, where you click the right arrow and it slides the content over. So I set out to add these features, which turned out to be more complicated than I initially thought. I first doubled the amount of content per row, so I could have the slider functionality. I then created Context to manage the slide index, as I would need to access these values from the styled-components file. I put the slide index into the styled component as a `transform: translateX(-${({ sliderIndex }) => sliderIndex}00%);` in which the slider index is `-(index)00%`. So if the slider index is 1, it returns a `translateX(-100%)` which would be the second slide. To make the items responsive, I media queried for each viewport width, and changed the width of each item relative to its parent. For a viewport width of 600px, for example, I wanted 2 items per slide, so I made their width 50%. 
 
@@ -184,4 +176,12 @@ export const Item = styled.div`
 
 ## Conclusion
 
-Learning javascript and React over this past year has been overall really rewarding and I'm looking forward to working with it in the future. My background in UX has influenced the way I think about structuring these applications, as I can see what information needs to be passed in where, and how certain components should function. I'd really like to work on a project that combines these two disciplines further!
+Turns out I really enjoy coding.  I've discovered many things over the year, such as the importance of thinking deeply about the problem and planning before writing a line of code, how critical testing is, how the git workflow has become an integral part of my process.  The main thing I've learned is how to learn and how to solve problems. How to break through the syntax barrier, how to research solutions (Stack Overflow is my second home these days), and how to break large problems into smaller more manageable chunks.  
+
+My background in UX has influenced the way I think about structuring applications, as I can see what information needs to be passed in where, and how certain components should function within the context of a whole application. 
+
+Overall, learning javascript and React over this past year has been really rewarding and I'm looking forward to working with it in the future. 
+
+For future growth I'd love to work more in the combination of these two disciplines, working with UX designers and developers to help realize engaging, intuitive experiences.  Lastly, but perhaps most importantly I want to join a team where I can learn from more experienced developers and merge my code into master.   I'm hoping that the combination of my design / UX and now coding skills make me an interesting candidate!  If so, please contact me, I'd love to hear from you! 
+
+Thanks for reading!

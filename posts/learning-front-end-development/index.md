@@ -182,6 +182,6 @@ My background in UX has influenced the way I think about structuring application
 
 Overall, learning javascript and React over this past year has been really rewarding and I'm looking forward to working with it in the future. 
 
-For future growth I'd love to work more in the combination of these two disciplines, working with UX designers and developers to help realize engaging, intuitive experiences.  Lastly, but perhaps most importantly I want to join a team where I can learn from more experienced developers and merge my code into master.   I'm hoping that the combination of my design / UX and now coding skills make me an interesting candidate!  If so, please contact me, I'd love to hear from you! 
+For future growth I'd love to work more in the combination of these two disciplines, working with UX designers and developers to help realize engaging, intuitive experiences.  Lastly, but perhaps most importantly I want to join a team where I can learn from more experienced developers and merge my code into master.   I'm hoping that the combination of my design / UX and now coding skills make me an interesting candidate!  If so, please [contact me](mailto:mylesjeffery96@gmail.com), I'd love to hear from you! 
 
 Thanks for reading!

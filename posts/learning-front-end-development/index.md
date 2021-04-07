@@ -3,7 +3,7 @@ slug: front-end-developer
 tags:
   - Development
 title: Becoming A Front End Developer
-date: 2021-04-04T18:41:46.810Z
+date: 2021-04-06T23:20:24.347Z
 description: "My experience learning javascript and react over the last year,
   featuring projects I built on the way and what I learned from them,
   culminating in a Netflix clone built with React, Firebase, and

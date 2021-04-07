@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 export default function Howdy() {
   return (
     <p>
-      I’m a branding and user experience designer, recently graduating from
+      Hi! I’m a branding & user experience designer and recent graduate from
       Parsons School of Design with a BFA in{' '}
       <a
         href="https://www.newschool.edu/parsons/bfa-integrated-design/"
@@ -23,7 +23,6 @@ export default function Howdy() {
       end developer / UX / designer role on either coast. <br></br>
       <br></br>If you have any questions about my work or would like to chat,
       feel free to <a href="mailto:mylesjeffery96@gmail.com">reach out</a>!
-      <br></br>
     </p>
   )
 }

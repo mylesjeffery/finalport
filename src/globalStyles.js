@@ -17,6 +17,9 @@ html {
       @media (max-width: 1000px) {
         font-size: 14px;
       }
+      @media (max-width: 850px) {
+        font-size: 12px;
+      }
 }
 body {
   margin: 0;
@@ -56,7 +59,7 @@ a {
   color: #000000;
   text-decoration:none;
   &:hover {
-    font-style: italic;
+    font-style:italic;
   }
 }
 h1 {
@@ -74,13 +77,7 @@ h1 {
   box-sizing: inherit;
 }
 
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
+
 code {
   font-size: 1rem;
   line-height: 1.45rem;

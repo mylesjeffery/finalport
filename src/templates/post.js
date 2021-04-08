@@ -71,7 +71,7 @@ export default function Post({ data }) {
       <Head title={data.markdownRemark.frontmatter.title} />
       <Main>
         <h1>{data.markdownRemark.frontmatter.title}</h1>
-        <h2 className="neue">
+        <p className="neue">
           {data.markdownRemark.frontmatter.tags.map((tag, i) => {
             if (data.markdownRemark.frontmatter.tags.length === i + 1) {
               return <span key={tag}>{tag}</span>
@@ -79,7 +79,7 @@ export default function Post({ data }) {
               return <span key={tag}>{tag}, </span>
             }
           })}
-        </h2>
+        </p>
         <p>{data.markdownRemark.frontmatter.description}</p>
         <Img
           fluid={data.markdownRemark.frontmatter.feature.childImageSharp.fluid}

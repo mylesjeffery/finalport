@@ -11,15 +11,20 @@ const PostList = styled.ol`
   list-style-type: none;
   margin: 0;
   padding: 0;
+  a:hover {
+    font-style: normal;
+    color: red;
+  }
   li {
     margin-left: 0;
     margin-bottom: 2rem;
     display: flex;
+    border-bottom: 1px solid grey;
+    padding-bottom: 2rem;
     .metadata {
       width: 60%;
       margin-right: 2rem;
       padding-bottom: 2rem;
-      border-bottom: 1px solid grey;
     }
     .feature-image {
       width: 40%;
@@ -31,10 +36,6 @@ const PostList = styled.ol`
     h2 {
       margin-bottom: 0;
       max-width: 750px;
-    }
-    a:hover {
-      font-style: normal;
-      color: red;
     }
 
     .tags {
@@ -49,6 +50,22 @@ const PostList = styled.ol`
     }
     .description {
       margin-top: 1rem;
+    }
+  }
+  @media (max-width: 750px) {
+    li {
+      flex-direction: column-reverse;
+      .metadata {
+        width: 100%;
+        margin-right: 2rem;
+        padding-bottom: 2rem;
+      }
+      .feature-image {
+        width: 100%;
+      }
+      h1 {
+        margin-top: 2rem;
+      }
     }
   }
 `
@@ -88,9 +105,9 @@ export default function Work() {
       <br></br>
       <PostList>
         {data.allMarkdownRemark.edges.map(edge => (
-          <li key={edge.node.frontmatter.slug}>
-            <div className="metadata">
-              <Link to={edge.node.frontmatter.slug}>
+          <Link to={edge.node.frontmatter.slug}>
+            <li key={edge.node.frontmatter.slug}>
+              <div className="metadata">
                 <h1>{edge.node.frontmatter.title}</h1>
 
                 <h2 className="neue">
@@ -105,15 +122,15 @@ export default function Work() {
                 <h2 className="description">
                   {edge.node.frontmatter.description}
                 </h2>
-              </Link>
-            </div>
-            <div className="feature-image">
-              <Img
-                fluid={edge.node.frontmatter.feature.childImageSharp.fluid}
-                alt={edge.node.frontmatter.title}
-              />
-            </div>
-          </li>
+              </div>
+              <div className="feature-image">
+                <Img
+                  fluid={edge.node.frontmatter.feature.childImageSharp.fluid}
+                  alt={edge.node.frontmatter.title}
+                />
+              </div>
+            </li>
+          </Link>
         ))}
       </PostList>
     </Container>

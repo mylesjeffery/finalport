@@ -33,7 +33,7 @@ export default function Howdy() {
         <br></br> If you have any questions about my work or would like to chat,
         feel free to{' '}
         <a href="mailto:mylesjeffery96@gmail.com" className="neue">
-          email me
+          reach out
         </a>
         !
       </h1>

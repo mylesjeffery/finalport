@@ -13,7 +13,7 @@ const FooterContainer = styled.footer`
   .contact {
     display: flex;
     width: 100%;
-    h2 {
+    h1 {
       margin-top: 0;
       margin-right: 2rem;
     }
@@ -35,10 +35,10 @@ export default function Footer() {
     <>
       <FooterContainer>
         <div className="contact">
-          <h2 className="neue">
+          <h1 className="neue">
             <a href="mailto:mylesjeffery96@gmail.com">Email</a>
-          </h2>
-          <h2 className="neue">
+          </h1>
+          <h1 className="neue">
             <a
               href="https://www.linkedin.com/in/myles-jeffery/"
               target="_blank"
@@ -46,8 +46,8 @@ export default function Footer() {
             >
               LinkedIn
             </a>
-          </h2>
-          <h2 className="neue">
+          </h1>
+          <h1 className="neue">
             <a
               href="https://github.com/mylesjeffery"
               target="_blank"
@@ -55,7 +55,7 @@ export default function Footer() {
             >
               Github
             </a>
-          </h2>
+          </h1>
         </div>
 
         <Link to="#top" className="neue">

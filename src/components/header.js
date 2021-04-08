@@ -7,18 +7,28 @@ const HeaderContainer = styled.header`
   display: flex;
   align-items: top;
   justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
   h1 {
     cursor: default;
+    margin: 0;
   }
 
   ul {
     display: flex;
     list-style-type: none;
     margin: 0;
+    padding-left: 0;
+  }
+  ul li {
+    margin: 0;
   }
   ul li:nth-child(2) {
     margin-left: 2rem;
+  }
+  @media (max-width: 750px) {
+    display: block;
   }
 `
 

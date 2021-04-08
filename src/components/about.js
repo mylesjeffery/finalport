@@ -10,6 +10,7 @@ const AboutContainer = styled.div`
 
 const Container = styled.div`
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
 
   .about-content {
@@ -43,6 +44,17 @@ const Container = styled.div`
   .subtitle {
     font-size: 1.2rem;
   }
+  @media (max-width: 750px) {
+    display: block;
+    .about-content {
+      width: 100%;
+      padding-right: 0;
+      max-width: 750px;
+    }
+    #about-pic {
+      width: 100%;
+    }
+  }
 `
 
 export default function About() {
@@ -65,7 +77,34 @@ export default function About() {
     <AboutContainer id="about">
       <h1 className="neue">About</h1>
       <Container>
+        <div id="about-pic">
+          <Img fluid={data.file.childImageSharp.fluid} alt="Me" />
+          <figcaption>
+            <em>just another brick in the wall...</em>
+          </figcaption>
+          <br></br>
+        </div>
         <div className="about-content">
+          <h1>Education </h1>
+          <h2>
+            <span className="neue">Parsons School of Design → Grad. 2020</span>{' '}
+            <br></br> I studied{' '}
+            <a
+              href="https://www.newschool.edu/parsons/bfa-integrated-design/"
+              target="_blank"
+              rel="noreferrer"
+              className="neue"
+            >
+              Integrated Design
+            </a>{' '}
+            at Parsons, a multidisciplinary approach to design studies that
+            combines various design methodologies to develop a holistic, hybrid
+            practice. My focus was on the intersection of branding and user
+            experience, as I learned to create digital experiences that evoke a
+            brand's idenity through interaction, layout, and typography.
+          </h2>
+          <br></br>
+          <hr></hr>
           <h1>What I Do </h1>
           <h2>
             <span className="neue">Design</span>
@@ -87,11 +126,20 @@ export default function About() {
 
           <h1>Experience </h1>
           <h2>
-            <span className="neue">Chingu Voyage 28</span>
+            <span className="neue">Chingu Voyage 28 - Mycolocate</span>
             <br></br>
             <span className="subtitle">February → April 2021</span>
             <br></br>I worked with two other developers via the Chingu platform
-            to build a wild edible mushroom locator.
+            to build a wild edible{' '}
+            <a
+              href="https://mycolocate.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="neue"
+            >
+              mushroom locator
+            </a>
+            .
           </h2>
           <h2>
             <span className="neue">Freelance Designer</span>
@@ -132,13 +180,6 @@ export default function About() {
               </h2>
             </div>
           </div>
-          <br></br>
-        </div>
-        <div id="about-pic">
-          <Img fluid={data.file.childImageSharp.fluid} alt="Me" />
-          <figcaption>
-            <em>just another brick in the wall...</em>
-          </figcaption>
           <br></br>
         </div>
       </Container>

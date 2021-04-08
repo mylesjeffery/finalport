@@ -20,6 +20,10 @@ I followed Scrimba's [Front End Developer Pathway](https://scrimba.com/learn/fro
 
 These are a few projects I built along the way, and what I learned from each of them.
 
+<br></br>
+
+<hr></hr>
+
 ## Javascript Carousel
 
 [Live Demo](https://mylesjeffery-carousel.netlify.app/)
@@ -27,6 +31,10 @@ These are a few projects I built along the way, and what I learned from each of 
 [Github Repo](https://github.com/mylesjeffery/carousel)
 
 This project introduced me to manipulating elements in the DOM with javascript via the carousel. It was accomplished by adding a class, "carousel-item-visible" and removing class "carousel-item-hidden", based on the index of the slide, which if is at the end of the list of slides, goes back to the first slide. 
+
+<br></br>
+
+<hr></hr>
 
 ## Javascript Pacman
 
@@ -36,6 +44,10 @@ This project introduced me to manipulating elements in the DOM with javascript v
 
 It's a little bit clunky, but it's a fully functional Pacman all in vanilla javascript. It uses css-grid to display the game, and moves Pacman around based on user input with the arrow keys. It works by adding and removing classes from each square of the grid when the user inputs or the ghosts move. 
 
+<br></br>
+
+<hr></hr>
+
 ## Punk API Beer App
 
 [Live Demo](https://mylesjeffery-beer.netlify.app/)
@@ -44,6 +56,10 @@ It's a little bit clunky, but it's a fully functional Pacman all in vanilla java
 
 This was my introduction to fetching data from an API using async and await. It uses the Punk Beer API, which  returns JSON with a bunch of draft beer brands. The user can filter for alcohol content and hoppiness, on three levels each. It also has pagination! 
 
+<br></br>
+
+<hr></hr>
+
 ## React Movie Search App
 
 [Live Demo](https://mylesjeffery-reactmoviesearchapp.netlify.app/)
@@ -51,6 +67,10 @@ This was my introduction to fetching data from an API using async and await. It 
 [Github Repo](https://github.com/mylesjeffery/movie_search_app_react)
 
 My first project in React, with higher order components, fetching data from an API, using a form to search. It was my introduction to useState, and my first time writing JSX. This opened my eyes to the potential of React to create interactive, dynamic applications.
+
+<br></br>
+
+<hr></hr>
 
 ## React Netflix Clone with Authentication (Firebase), Live Search,  styled-components, and Testing with react-testing-library
 
@@ -173,6 +193,10 @@ export const Item = styled.div`
 	}
 `
 ```
+
+<br></br>
+
+<hr></hr>
 
 ## Conclusion
 

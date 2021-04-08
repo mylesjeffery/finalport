@@ -1,5 +1,6 @@
-export { default as Posts } from './posts'
+export { default as Work } from './work'
 export { default as Layout } from './layout'
 export { default as Head } from './head'
 export { default as Tags } from './tags'
 export { default as Howdy } from './howdy'
+export { default as About } from './about'

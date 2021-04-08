@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 
 const HeaderContainer = styled.header`
-  padding: 1rem 0 3rem;
+  /* padding: 1rem 0 3rem; */
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
 
   h1 {
     cursor: default;
@@ -14,29 +17,12 @@ const HeaderContainer = styled.header`
     list-style-type: none;
     margin: 0;
   }
-  nav {
-    a {
-      color: #999999;
-      text-decoration: none;
-      margin-right: 1.3rem;
-      &:hover {
-        color: #666666;
-      }
-    }
-  }
-
-  .active-nav-item {
-    color: #000000;
-    cursor: default;
-    &:hover {
-      color: #000000;
-    }
+  ul li:nth-child(2) {
+    margin-left: 2rem;
   }
 `
 
-export default function Header({ about }) {
-  const [job, setJob] = useState(['designer', 'codes'])
-
+export default function Header() {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -48,32 +34,29 @@ export default function Header({ about }) {
     }
   `)
 
-  function mouseEnter() {
-    setJob(['developer', 'designs'])
-  }
-  function mouseLeave() {
-    setJob(['designer', 'codes'])
-  }
-
   return (
     <HeaderContainer>
-      <h1 onMouseEnter={() => mouseEnter()} onMouseLeave={() => mouseLeave()}>
-        {data.site.siteMetadata.title} is a {job[0]} who {job[1]}.
+      <h1>
+        <Link to="/" className="neue">
+          {data.site.siteMetadata.title}
+        </Link>{' '}
+        is a designer who codes.
       </h1>
       <nav>
         <ul>
           <li>
-            <Link to="/" activeClassName="active-nav-item">
-              Work
-            </Link>
+            <h1>
+              <Link to="/#work" className="neue">
+                Work
+              </Link>
+            </h1>
           </li>
           <li>
-            <Link to="/about" activeClassName="active-nav-item">
-              About
-            </Link>
-          </li>
-          <li>
-            <a href="mailto:mylesjeffery96@gmail.com">Email</a>
+            <h1>
+              <Link to="/#about" className="neue">
+                About
+              </Link>
+            </h1>
           </li>
         </ul>
       </nav>

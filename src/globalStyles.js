@@ -1,8 +1,120 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 20px;
+  scroll-behavior: smooth;
+  @media (max-width: 1250px) {
+        font-size: 16px;
+      }
+      @media (min-width: 2200px) {
+        font-size: 22px;
+      }
+      @media (max-width: 1000px) {
+        font-size: 14px;
+      }
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+//TYPOGRAPHY
+@font-face {
+  font-family: "panama";
+  src: url('../static/fonts/pana.otf')
+}
+
+body {
+  font-family: "panama", 'Times New Roman', Times, serif;
+  font-weight: 400;
+  
+}
+body::selection {
+    background-color:white;
+    color:red;
+  }
+
+.neue {
+  font-family: neue-haas-grotesk-text, 'Helvetica', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 2.2rem;
+}
+h1, h2, h3 {
+  font-weight: 400;
+  line-height:1.2em;
+}
+a {
+  color: #000000;
+  text-decoration:none;
+  &:hover {
+    font-style: italic;
+  }
+}
+h1 {
+  font-size: 2em;
+  line-height: 2.2rem;
+}
+
+* {
+  box-sizing: inherit;
+}
+*:before {
+  box-sizing: inherit;
+}
+*:after {
+  box-sizing: inherit;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+code {
+  font-size: 1rem;
+  line-height: 1.45rem;
+}
+tt,
+code {
+  background-color: hsla(0, 0%, 0%, 0.04);
+  border-radius: 3px;
+  font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
+    "Liberation Mono", Menlo, Courier, monospace;
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+pre code {
+  background: none;
+  line-height: 1.42;
+}
+code:before,
+code:after,
+tt:before,
+tt:after {
+  letter-spacing: -0.2em;
+  content: " ";
+}
+pre code:before,
+pre code:after,
+pre tt:before,
+pre tt:after {
+  content: "";
+}
 /* Reset provided by https://github.com/gatsbyjs/gatsby-starter-blog via MIT license */
 
+/* 
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -213,6 +325,13 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+}
+//TYPOGRAPHY
+.neue {
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
 }
 a {
   color: hsla(0, 0%, 0%, .8);
@@ -642,4 +761,4 @@ pre tt:after {
     font-size: 100%;
   }
 }
-`
+*/`

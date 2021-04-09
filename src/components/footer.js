@@ -8,10 +8,22 @@ const FooterContainer = styled.footer`
   justify-content: space-between;
 
   ul {
+    margin: 0;
     list-style-type: none;
     display: flex;
     li {
       margin-left: 1rem;
+    }
+  }
+  @media (max-width: 650px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    ul li {
+      margin-left: 0;
+      margin-right: 1rem;
+    }
+    #toplink {
+      margin-right: 0;
     }
   }
 `
@@ -52,7 +64,7 @@ export default function Footer() {
             Github
           </a>
         </li>
-        <li>
+        <li id="toplink">
           <a href="#top">Top↑</a>
         </li>
       </ul>

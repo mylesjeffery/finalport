@@ -25,7 +25,7 @@ Helvetica Neue Bold was chosen as the base typeface, as it has a universality & 
 
 ![hamon observation tower](/img/dy.jpeg)
 
-![famsf](/img/famsf.svg)
+![famsf](/img/famsf.png)
 
 The de Young is one of two museums organized by the Fine Arts Museums of San Francisco, (FAMSF) the other being the Legion of Honor Museum in Land's End. Although the focus of this project was on the de Young, I also designed a cohesive brand system for FAMSF and its museums. The FAMSF logo reflects the building block-like nature of the de Young logo, but interacts differently. See below, the blocks of the FAMSF appear to playfully fall into place around the de Young, Legion of Honor, and Brand Guidelines blocks. 
 

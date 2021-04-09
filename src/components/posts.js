@@ -48,7 +48,7 @@ const PostList = styled.ol`
   }
 `
 
-export default function Posts({ filter }) {
+export default function Posts() {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
@@ -79,59 +79,28 @@ export default function Posts({ filter }) {
   `)
   return (
     <PostList>
-      {filter.length === 0
-        ? data.allMarkdownRemark.edges.map(edge => (
-            <li key={edge.node.frontmatter.slug}>
-              <Link to={edge.node.frontmatter.slug}>
-                <h2>{edge.node.frontmatter.title}</h2>
+      {data.allMarkdownRemark.edges.map(edge => (
+        <li key={edge.node.frontmatter.slug}>
+          <Link to={edge.node.frontmatter.slug}>
+            <h2>{edge.node.frontmatter.title}</h2>
 
-                <p className="tags">
-                  {edge.node.frontmatter.tags.map((tag, i) => {
-                    if (edge.node.frontmatter.tags.length === i + 1) {
-                      return <span key={tag}>{tag}</span>
-                    } else {
-                      return <span key={tag}>{tag}, </span>
-                    }
-                  })}
-                </p>
-                <p className="description">
-                  {edge.node.frontmatter.description}
-                </p>
-                <Img
-                  fluid={edge.node.frontmatter.feature.childImageSharp.fluid}
-                  alt={edge.node.frontmatter.title}
-                />
-              </Link>
-            </li>
-          ))
-        : data.allMarkdownRemark.edges
-            .filter(edge =>
-              edge.node.frontmatter.tags.some(val => filter.indexOf(val) !== -1)
-            )
-            .map(edge => (
-              <li key={edge.node.frontmatter.slug}>
-                <Link to={edge.node.frontmatter.slug}>
-                  <h2>{edge.node.frontmatter.title}</h2>
-                  <p className="date">{edge.node.frontmatter.date}</p>
-                  <p className="tags">
-                    {edge.node.frontmatter.tags.map((tag, i) => {
-                      if (edge.node.frontmatter.tags.length === i + 1) {
-                        return <span key={tag}>{tag}</span>
-                      } else {
-                        return <span key={tag}>{tag}, </span>
-                      }
-                    })}
-                  </p>
-                  <p className="description">
-                    {edge.node.frontmatter.description}
-                  </p>
-                  <Img
-                    fluid={edge.node.frontmatter.feature.childImageSharp.fluid}
-                    alt={edge.node.frontmatter.title}
-                  />
-                </Link>
-              </li>
-            ))}
+            <p className="tags">
+              {edge.node.frontmatter.tags.map((tag, i) => {
+                if (edge.node.frontmatter.tags.length === i + 1) {
+                  return <span key={tag}>{tag}</span>
+                } else {
+                  return <span key={tag}>{tag}, </span>
+                }
+              })}
+            </p>
+            <p className="description">{edge.node.frontmatter.description}</p>
+            <Img
+              fluid={edge.node.frontmatter.feature.childImageSharp.fluid}
+              alt={edge.node.frontmatter.title}
+            />
+          </Link>
+        </li>
+      ))}
     </PostList>
   )
 }

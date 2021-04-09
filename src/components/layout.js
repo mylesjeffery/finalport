@@ -21,7 +21,7 @@ export const Container = styled.div`
 
 export default function Layout({ children }) {
   return (
-    <Container>
+    <Container id="top">
       <GlobalStyles />
       <div className="content">
         <Header />

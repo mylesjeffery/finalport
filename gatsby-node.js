@@ -10,11 +10,10 @@ module.exports.createPages = async ({ graphql, actions }) => {
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
       ) {
-        edges {
-          node {
-            frontmatter {
-              slug
-            }
+        nodes {
+          id
+          frontmatter {
+            slug
           }
         }
       }
@@ -25,12 +24,17 @@ module.exports.createPages = async ({ graphql, actions }) => {
     return
   }
 
-  res.data.allMarkdownRemark.edges.forEach(edge => {
+  const posts = res.data.allMarkdownRemark.nodes
+
+  posts.forEach((post, index) => {
+    const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
     createPage({
       component: postTemplate,
-      path: edge.node.frontmatter.slug,
+      path: post.frontmatter.slug,
       context: {
-        slug: edge.node.frontmatter.slug,
+        slug: post.frontmatter.slug,
+        id: post.id,
+        nextPostId,
       },
     })
   })

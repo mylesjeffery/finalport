@@ -14,13 +14,12 @@ export default function Howdy() {
         Integrated Design
       </a>
       . As I graduated just as COVID19 was setting in, I took the opportunity to
-      devote the remainder of 2020 and early 2021 to learning front end
-      development.{' '}
-      <Link to="/front-end-developer">Read more about my journey here.</Link>
+      devote the lockdown to learning front end development. <br></br>
+      <Link to="/front-end-developer">Read about my journey here.</Link>
       <br></br>
       <br></br>
-      I'm currently located in the Bay Area and am seeking an entry level front
-      end developer / UX / designer role on either coast. <br></br>
+      I'm currently located in the Bay Area and am seeking a junior front end
+      developer / UX / designer role on either coast. <br></br>
       <br></br>If you have any questions about my work or would like to chat,
       feel free to <a href="mailto:mylesjeffery96@gmail.com">reach out</a>!
     </p>

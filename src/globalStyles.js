@@ -7,6 +7,8 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  scroll-behavior: auto;
+
 }
 body {
   margin: 0;
@@ -419,6 +421,8 @@ figcaption {
   margin-bottom: 1.45rem;
 }
 pre {
+  max-height: 750px;
+  overflow:scroll;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -427,7 +431,6 @@ pre {
   line-height: 1.42;
   background: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
-  overflow: auto;
   word-wrap: normal;
   padding: 1.45rem;
 }
@@ -619,10 +622,13 @@ code {
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
+  
+
 }
 pre code {
   background: none;
   line-height: 1.42;
+ 
 }
 code:before,
 code:after,

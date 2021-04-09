@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, Link, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 
 import { Layout, Head, Howdy } from '../components'
@@ -49,16 +49,16 @@ export default function About() {
         at Parsons, a multidisciplinary approach to design studies that combines
         various design methodologies to develop a holistic, hybrid practice. My
         focus was on the intersection of branding and user experience, as I
-        learned to create digital experiences that evoke a brand's idenity
+        learned to create digital experiences that evoke a brand's idendity
         through interaction, layout, and typography.
       </p>
       <br></br>
       <hr></hr>
 
       <h2>
-        Expertise{' '}
+        What I Do{' '}
         <span role="img" aria-label="emoji">
-          🔬
+          👨🏻‍💻
         </span>
       </h2>
       <p>
@@ -140,9 +140,9 @@ export default function About() {
       <br></br>
 
       <h2>
-        Links{' '}
+        Contact{' '}
         <span role="img" aria-label="emoji">
-          🔗
+          📨
         </span>
       </h2>
       <ul>

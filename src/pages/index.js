@@ -1,20 +1,20 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import { Layout, Head, Howdy, Posts } from '../components'
 
 export default function Home() {
-  const [filter, setFilter] = useState([])
+  // const [filter, setFilter] = useState([])
 
-  function addTag(tag) {
-    const newFilter = [...filter]
-    newFilter.push(tag)
-    setFilter(newFilter)
-  }
-  function removeTag(tag) {
-    let newFilter = [...filter]
-    newFilter = newFilter.filter(t => t !== tag)
-    setFilter(newFilter)
-  }
+  // function addTag(tag) {
+  //   const newFilter = [...filter]
+  //   newFilter.push(tag)
+  //   setFilter(newFilter)
+  // }
+  // function removeTag(tag) {
+  //   let newFilter = [...filter]
+  //   newFilter = newFilter.filter(t => t !== tag)
+  //   setFilter(newFilter)
+  // }
 
   return (
     <Layout>
@@ -26,7 +26,7 @@ export default function Home() {
         addTag={addTag}
         removeTag={removeTag}
       /> */}
-      <Posts filter={filter} />
+      <Posts />
     </Layout>
   )
 }

@@ -1,5 +1,5 @@
 ---
-slug: /ordr
+slug: ordr
 tags:
   - UX
   - Brand

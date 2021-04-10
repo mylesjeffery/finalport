@@ -463,6 +463,9 @@ table {
   line-height: 1.45rem;
   border-collapse: collapse;
   width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  text-rendering: optimizeLegibility;
 }
 fieldset {
   margin-left: 0;

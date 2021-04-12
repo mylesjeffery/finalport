@@ -35,16 +35,15 @@ After gathering my research, I wrote down the core functionalities the app neede
 4. Ordr number system where user receives wait time info and notifies user when it's time to pick up.
 5. Large number display for signaling to bartender where user is located in bar.
 
-I developed a prototype of the app in Figma, to demonstrate the user experience and convey how the app would look and feel. I aimed to guide the user through the experience, never showing more information than was necessary.\
-‍
+I developed a prototype of the app in Figma, to demonstrate the user experience and convey how the app would look and feel. I aimed to guide the user through the experience, never showing more information than was necessary.
+
+I tested the app on my friends, the target audience of young adults 21-30 years old. They provided me with useful information about how to better structure information and make certain features of the app clearer.
 
 ## Branding
 
-The brand was developed in conjunction with the app. As I was thinking about how the app should flow and feel, I was thinking about how the brand should reflect the themes and concepts of nightlife, and the fluidity and utility the app provides. The core turquoise color is used to identify the brand as well as draw attention to certain objects in the app, like favorite drinks or bars the user frequents.
+The brand was developed in conjunction with the app. As I was thinking about how the app should flow and feel, I was thinking about how the brand should reflect the themes and concepts of nightlife, and the fluidity and utility the app provides. The core turquoise color is used to identify the brand as well as draw attention to certain objects in the app, like favorite drinks or bars the user frequents. 
 
-I tested the app on my friends, the target audience of young adults 21-30 years old. They provided me with useful information about how to better structure information and make certain features of the app clearer.\
-\
-I also asked them questions about the brand, like how it made them feel, what words were used to express what they see from the logo and brand content.
+Photos from the heyday of Studio 54 were used in Ordr's brand campaign to juxtapose the sleek, modern feel of the brand with a nostalgic, joyful presence. They were used in the "More of this, less of that" campaign to add humor and a straightforward utilitarianism to the brand. Below is an example poster for this campaign.
 
 ![ordr posters](/img/postermockup2.jpg)
 
@@ -52,7 +51,7 @@ Below is a sticker that would be featured in participating venues' windows, so t
 
 ![](/img/ordrwindowsticker.jpg)
 
-Below is the brand guide I created for the app:
+## Brand Guidelines:
 
 ![](/img/ordrbg1.png)
 

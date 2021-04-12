@@ -3,25 +3,33 @@ import { Link } from 'gatsby'
 
 export default function Howdy() {
   return (
-    <p>
-      Hi! I’m a branding & user experience designer and recent graduate from
-      Parsons School of Design with a BFA in{' '}
-      <a
-        href="https://www.newschool.edu/parsons/bfa-integrated-design/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Integrated Design
-      </a>
-      . As I graduated just as COVID19 was setting in, I took the opportunity to
-      devote the lockdown to learning front end development. <br></br>
-      <Link to="/front-end-developer">Read about my journey here.</Link>
-      <br></br>
-      <br></br>
-      I'm currently located in the Bay Area and am seeking a junior front end
-      developer / UX / designer role on either coast. <br></br>
-      <br></br>If you have any questions about my work or would like to chat,
-      feel free to <a href="mailto:mylesjeffery96@gmail.com">reach out</a>!
-    </p>
+    <>
+      <h2>Hey! I’m Myles.</h2>
+      <p>
+        I'm a digital product & brand designer who also loves to write code! I
+        create distinct digital experiences that evoke a company's personality
+        through UX, visual design, and Javascript.{' '}
+      </p>
+      <p>
+        I graduated from Parsons School of Design with an{' '}
+        <a
+          href="https://www.newschool.edu/parsons/bfa-integrated-design/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Integrated Design BFA
+        </a>{' '}
+        in the spring of 2020, just as COVID-19 was setting in. The lockdown
+        presented me with the opportunity to realize my dream of{' '}
+        <Link to="/front-end-developer">learning front-end development</Link>.
+        <br></br>
+        <br></br>
+        Currently living in the Bay Area, I'm seeking a junior designer /
+        developer position on either coast. I'm open to remote work and
+        relocation! <br></br>
+        <br></br>I'd love to hear from you, so don't hesitate to{' '}
+        <a href="mailto:mylesjeffery96@gmail.com">reach out</a>!
+      </p>
+    </>
   )
 }

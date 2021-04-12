@@ -9,6 +9,11 @@ const HeaderContainer = styled.header`
     cursor: default;
   }
 
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
   ul {
     display: flex;
     list-style-type: none;
@@ -23,6 +28,10 @@ const HeaderContainer = styled.header`
         color: #666666;
       }
     }
+  }
+  .navlinks a {
+    margin-right: 0;
+    margin-left: 1.3rem;
   }
 
   .active-nav-item {
@@ -72,8 +81,28 @@ export default function Header({ about }) {
               About
             </Link>
           </li>
+        </ul>
+        <ul className="navlinks">
           <li>
             <a href="mailto:mylesjeffery96@gmail.com">Email</a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/myles-jeffery/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/mylesjeffery"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
+            </a>
           </li>
         </ul>
       </nav>

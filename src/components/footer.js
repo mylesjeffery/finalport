@@ -14,6 +14,13 @@ const FooterContainer = styled.footer`
     li {
       margin-left: 1rem;
     }
+    a {
+      color: #999999;
+      text-decoration: none;
+      &:hover {
+        color: #666666;
+      }
+    }
   }
   @media (max-width: 650px) {
     flex-direction: column-reverse;
@@ -22,6 +29,7 @@ const FooterContainer = styled.footer`
       margin-left: 0;
       margin-right: 1rem;
     }
+
     #toplink {
       margin-right: 0;
     }

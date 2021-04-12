@@ -11,7 +11,7 @@ feature: /img/1_g9avai3aezhlw_jsicfb1q.jpeg
 ---
 As my past portfolios were made using Webflow, a visual html/css designer, I knew I needed to develop a new one with my new coding skills. I saw this as an opportunity to create a website that expressed my personality through typography, layout, and interaction. I also saw it as an opportunity to learn a framework that I had seen been used for many websites I loved: Gatsby. 
 
-Gatsby is a static-site-generator, although their website doesn't describe it as that, it is commonly used to create super fast, lightweight sites built on React. It's also a really great developing experience. I used Netlify for deployment and I also used their CMS to manage my posts, as I had never worked with a CMS before. 
+Gatsby is a static-site-generator, although their website doesn't describe it as that, it is commonly used to create super fast, lightweight sites built on React. It's also a really great developing experience. I used Netlify for deployment and I also used their CMS to manage my posts, as I had never worked with a production grade CMS before. 
 
 Check out the [Github Repo](https://github.com/mylesjeffery/portfolio) if you're interested!
 
@@ -75,4 +75,4 @@ This query requires a template to build each markdown file into - the `const pos
 
 ## Conclusion
 
-I can see why Gatsby has become so popular. It makes the development process very easy, with live reloading on save, many features automatically built in, and super fast websites. I'm excited to explore it more!
+I can see why Gatsby has become so popular. It makes the development process very easy, with live reloading on save, many features automatically built in. The result is a super fast website. I'm excited to explore it more!

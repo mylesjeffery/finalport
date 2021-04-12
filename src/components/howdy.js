@@ -6,9 +6,9 @@ export default function Howdy() {
     <>
       <h2>Hey! I’m Myles.</h2>
       <p>
-        I'm a digital product & brand designer who also loves to write code! I
-        create distinct digital experiences that evoke a company's personality
-        through UX, visual design, and Javascript.{' '}
+        I'm a digital product & brand designer who writes code. I create
+        distinct digital experiences that evoke a company's personality through
+        empathic UX, engaging visual design, and Javascript.{' '}
       </p>
       <p>
         I graduated from Parsons School of Design with an{' '}

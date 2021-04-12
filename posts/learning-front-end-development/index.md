@@ -76,6 +76,8 @@ My first project in React, with higher order components, fetching data from an A
 
 <a href="https://mylesjeffery-netflixclone.netlify.app/" target="_blank" rel="noreferrer">Live Demo</a>
 
+Note: for demo you can either sign up with your own email or login with the email: "demo@user.com" and password: "demouser"
+
 <a href="https://github.com/mylesjeffery/netflix-clone" target="_blank" rel="noreferrer">Github Repo</a>
 
 ![netflix](/img/netflix.jpg)

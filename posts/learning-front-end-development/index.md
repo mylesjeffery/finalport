@@ -26,9 +26,9 @@ These are a few projects I built along the way, and what I learned from each of 
 
 ## Javascript Carousel
 
-[Live Demo](https://mylesjeffery-carousel.netlify.app/)
+<a href="https://mylesjeffery-carousel.netlify.app/" target="_blank" rel="noreferrer">Live Demo</a>
 
-[Github Repo](https://github.com/mylesjeffery/carousel)
+<a href="https://github.com/mylesjeffery/carousel" target="_blank" rel="noreferrer">Github Repo</a>
 
 This project introduced me to manipulating elements in the DOM with javascript via the carousel. It was accomplished by adding a class, "carousel-item-visible" and removing class "carousel-item-hidden", based on the index of the slide, which if is at the end of the list of slides, goes back to the first slide. 
 
@@ -38,9 +38,9 @@ This project introduced me to manipulating elements in the DOM with javascript v
 
 ## Javascript Pacman
 
-[Live Demo](https://mylesjeffery-js-pacman.netlify.app/)
+<a href="https://mylesjeffery-js-pacman.netlify.app/" target="_blank" rel="noreferrer">Live Demo</a>
 
-[Github Repo](https://github.com/mylesjeffery/pacman/blob/master/main.js)
+<a href="https://github.com/mylesjeffery/pacman/blob/master/main.js" target="_blank" rel="noreferrer">Github Repo</a>
 
 It's a little bit clunky, but it's a fully functional Pacman all in vanilla javascript. It uses css-grid to display the game, and moves Pacman around based on user input with the arrow keys. It works by adding and removing classes from each square of the grid when the user inputs or the ghosts move. 
 
@@ -50,9 +50,9 @@ It's a little bit clunky, but it's a fully functional Pacman all in vanilla java
 
 ## Punk API Beer App
 
-[Live Demo](https://mylesjeffery-beer.netlify.app/)
+<a href="https://mylesjeffery-beer.netlify.app/" target="_blank" rel="noreferrer">Live Demo</a>
 
-[Github Repo](https://github.com/mylesjeffery/my-beer-app/blob/main/main.js)
+<a href="https://github.com/mylesjeffery/my-beer-app/blob/main/main.js" target="_blank" rel="noreferrer">Github Repo</a>
 
 This was my introduction to fetching data from an API using async and await. It uses the Punk Beer API, which  returns JSON with a bunch of draft beer brands. The user can filter for alcohol content and hoppiness, on three levels each. It also has pagination! 
 
@@ -62,9 +62,9 @@ This was my introduction to fetching data from an API using async and await. It 
 
 ## React Movie Search App
 
-[Live Demo](https://mylesjeffery-reactmoviesearchapp.netlify.app/)
+<a href="https://mylesjeffery-reactmoviesearchapp.netlify.app/" target="_blank" rel="noreferrer">Live Demo</a>
 
-[Github Repo](https://github.com/mylesjeffery/movie_search_app_react)
+<a href="https://github.com/mylesjeffery/movie_search_app_react" target="_blank" rel="noreferrer">Github Repo</a>
 
 My first project in React, with higher order components, fetching data from an API, using a form to search. It was my introduction to useState, and my first time writing JSX. This opened my eyes to the potential of React to create interactive, dynamic applications.
 
@@ -74,9 +74,9 @@ My first project in React, with higher order components, fetching data from an A
 
 ## React Netflix Clone with Authentication (Firebase), Live Search,  styled-components, and Testing with react-testing-library
 
-[Live Demo](https://mylesjeffery-netflixclone.netlify.app)
+<a href="https://mylesjeffery-netflixclone.netlify.app/" target="_blank" rel="noreferrer">Live Demo</a>
 
-[Github Repo](https://github.com/mylesjeffery/netflix-clone)
+<a href="https://github.com/mylesjeffery/netflix-clone" target="_blank" rel="noreferrer">Github Repo</a>
 
 ![netflix](/img/netflix.jpg)
 

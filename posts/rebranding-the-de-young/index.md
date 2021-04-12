@@ -11,7 +11,7 @@ feature: /img/4fold.jpg
 ---
 The de Young Museum in San Francisco's Golden Gate Park is my favorite art museum. Its iconic architecture, engaging exhibits, and extensive art collections from around the world set it apart.\
 \
-The de Young brand, however, could use a refresh. It's dull and forgettable, and doesn't do the museum justice. I set out to design a new brand identity, one that is as singular & impactful as the museum and adaptable to the diverse range of art it contains.\
+However the de Young brand could use a refresh. I personally feel that its currently slightly dull and even forgettable. It doesn't do the museum justice. So I set out to design a new brand identity, one that is as singular & impactful as the museum and adaptable to the diverse range of art it contains.\
 \
 I identified three themes to work around: diversity, materiality, and universality.
 

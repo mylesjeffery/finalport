@@ -4,8 +4,9 @@ tags:
   - Development
 title: Building this Website with GatsbyJS
 date: 2021-04-05T15:48:33.498Z
-description: "I a needed a portfolio website and I wanted to learn the Gatsby
-  framework. It was also my first time using GraphQL and working with a CMS. "
+description: "I needed a portfolio website and also wanted to learn the Gatsby
+  framework. It turned out to be a perfect solution. It was my first exposure to
+  GraphQL and working with a production quality CMS. "
 feature: /img/1_g9avai3aezhlw_jsicfb1q.jpeg
 ---
 As my past portfolios were made using Webflow, a visual html/css designer, I knew I needed to develop a new one with my new coding skills. I saw this as an opportunity to create a website that expressed my personality through typography, layout, and interaction. I also saw it as an opportunity to learn a framework that I had seen been used for many websites I loved: Gatsby. 

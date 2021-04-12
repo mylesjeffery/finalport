@@ -50,7 +50,7 @@ export default function About() {
         at Parsons, a multidisciplinary approach to design studies that combines
         various design methodologies to develop a holistic, hybrid practice. My
         focus was on the intersection of branding and user experience, as I
-        learned to create digital experiences that evoke a brand's idendity
+        learned to create digital experiences that evoke a brand's identity
         through interaction, layout, and typography.
       </p>
       <br></br>

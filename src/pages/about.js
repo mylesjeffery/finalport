@@ -154,7 +154,7 @@ export default function About() {
           <td>Netlify</td>
         </tr>
         <tr>
-          <td>Lightroom</td>
+          <td>Webflow</td>
           <td>Firebase</td>
         </tr>
       </table>

@@ -4,10 +4,10 @@ tags:
   - Development
 title: Becoming A Front End Developer
 date: 2021-04-06T23:20:24.347Z
-description: "My experience learning javascript and react over the last year,
-  featuring projects I built on the way and what I learned from them,
-  culminating in a Netflix clone built with React, Firebase, and
-  styled-components. "
+description: "This post is about my experience learning JavaScript and React
+  over the last year, featuring projects I built along the way and what I
+  learned from them– culminating in a Netflix clone built with React, Firebase,
+  and styled-components. "
 feature: /img/why-use-react-instead-of-javascript-html-and-css.jpeg
 ---
 After graduating from Parsons in the spring of 2020 the world suddenly changed! The COVID lock down had started. No one was hiring graduates at that time, so I moved back home to the Bay Area.

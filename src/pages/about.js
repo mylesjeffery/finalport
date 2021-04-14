@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, useStaticQuery, Link } from 'gatsby'
 import Img from 'gatsby-image'
 
-import { Layout, Head, Howdy } from '../components'
+import { Layout, Head } from '../components'
 
 export default function About() {
   const data = useStaticQuery(graphql`

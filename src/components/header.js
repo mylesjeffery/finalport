@@ -7,6 +7,19 @@ const HeaderContainer = styled.header`
 
   h1 {
     cursor: default;
+    .underline {
+      /* text-decoration: underline; */
+      border-bottom-width: 5px;
+      border-bottom-style: solid;
+      display: inline-block;
+      margin-bottom: -10px;
+    }
+    .red {
+      color: #f65c00;
+    }
+    .blue {
+      color: #0079ff;
+    }
   }
 
   nav {
@@ -44,7 +57,10 @@ const HeaderContainer = styled.header`
 `
 
 export default function Header({ about }) {
-  const [job, setJob] = useState(['designer', 'codes'])
+  const [job, setJob] = useState([
+    ['designer', 'red'],
+    ['[codes]', 'blue'],
+  ])
 
   const data = useStaticQuery(graphql`
     query {
@@ -58,16 +74,24 @@ export default function Header({ about }) {
   `)
 
   function mouseEnter() {
-    setJob(['developer', 'designs'])
+    setJob([
+      ['developer', 'blue'],
+      ['[designs]', 'red'],
+    ])
   }
   function mouseLeave() {
-    setJob(['designer', 'codes'])
+    setJob([
+      ['designer', 'red'],
+      ['[codes]', 'blue'],
+    ])
   }
 
   return (
     <HeaderContainer>
       <h1 onMouseEnter={() => mouseEnter()} onMouseLeave={() => mouseLeave()}>
-        {data.site.siteMetadata.title} is a {job[0]} who {job[1]}.
+        {data.site.siteMetadata.title} is a{' '}
+        <span className={`underline ${job[0][1]}`}>{job[0][0]}</span> who{' '}
+        <span className={job[1][1]}>{job[1][0]}</span>.
       </h1>
       <nav>
         <ul>

@@ -8,7 +8,7 @@ export default function Howdy() {
       <p>
         I'm a digital product & brand designer who writes code. I create
         distinct digital experiences that evoke a company's personality through
-        empathic UX, engaging visual design, and Javascript.{' '}
+        empathic UX, engaging visual design, and JavaScript.{' '}
       </p>
       <p>
         I graduated from Parsons School of Design with an{' '}

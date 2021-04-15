@@ -6,7 +6,7 @@ export default function Howdy() {
     <>
       <h2>Hey! I’m Myles.</h2>
       <p>
-        I'm a digital product and brand designer who codes. I create distinct
+        I'm a digital product and brand designer who codes. I create distinctive
         digital experiences that evoke a company's personality through empathic
         UX, engaging visual design, and JavaScript.{' '}
       </p>
@@ -24,9 +24,10 @@ export default function Howdy() {
         <Link to="/front-end-developer">learning front-end development</Link>.
         <br></br>
         <br></br>
-        Currently living in the Bay Area, I'm seeking a junior designer /
-        developer position on either coast. I'm open to remote work and
-        relocation! <br></br>
+        I'm eager to join a team where I can contribute and learn through
+        building intuitive experiences with other designers and developers.
+        Currently living in the Bay Area, but I'm open to relocation and remote
+        work! <br></br>
         <br></br>I'd love to hear from you, so don't hesitate to{' '}
         <a href="mailto:mylesjeffery96@gmail.com">reach out</a>!
       </p>

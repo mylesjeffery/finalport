@@ -75,7 +75,7 @@ export default function Header({ about }) {
 
   function mouseEnter() {
     setJob([
-      ['developer', 'blue'],
+      ['coder', 'blue'],
       ['[designs]', 'red'],
     ])
   }

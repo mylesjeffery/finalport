@@ -200,9 +200,9 @@ export const Item = styled.div`
 
 <hr></hr>
 
-## Conclusion
+## The Journey Continues...
 
-Turns out I really enjoy coding.  I've discovered many things over the year, such as the importance of thinking deeply about the problem and planning before writing a line of code, how critical testing is, how the git workflow has become an integral part of my process.  The main thing I've learned is how to learn and how to solve problems. How to break through the syntax barrier, how to research solutions (Stack Overflow is my second home these days), and how to break large problems into smaller more manageable chunks.  
+Turns out I really enjoy coding! Just like building a house, it's vital that your foundations are strong. I took my time, practiced and mastered each layer of the coding stack. When I stand back and think about my learning journey, I think the key skill I've learned is how to learn. I realize that my coding journey will never be complete, there will always be new languages, frameworks and tools. However, I feel confident in my abilities to grasp any new concepts, syntax and development processes. I feel empowered to take on anything I set my mind to.
 
 My background in UX has influenced the way I think about structuring applications, as I can see what information needs to be passed in where, and how certain components should function within the context of a whole application. 
 

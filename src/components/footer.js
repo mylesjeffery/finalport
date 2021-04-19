@@ -49,7 +49,7 @@ export default function Footer() {
 
   return (
     <FooterContainer>
-      <p>Created by {data.site.siteMetadata.author}, © 2021</p>
+      <p>{data.site.siteMetadata.author}, © 2021</p>
       <ul>
         <li>
           <a href="mailto:mylesjeffery96@gmail.com">Email</a>
@@ -70,6 +70,15 @@ export default function Footer() {
             rel="noreferrer"
           >
             Github
+          </a>
+        </li>
+        <li>
+          <a
+            href="/uploads/mylesjeffery_resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Resume
           </a>
         </li>
         <li id="toplink">

@@ -25,14 +25,22 @@ const HeaderContainer = styled.header`
   nav {
     display: flex;
     justify-content: space-between;
-  }
-
-  ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-  }
-  nav {
+    ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+    }
+    .navlinks a {
+      margin-right: 0;
+      margin-left: 1.3rem;
+    }
+    @media (max-width: 650px) {
+      display: block;
+      .navlinks a {
+        margin-left: 0;
+        margin-right: 1.3rem;
+      }
+    }
     a {
       color: #999999;
       text-decoration: none;
@@ -41,10 +49,6 @@ const HeaderContainer = styled.header`
         color: #666666;
       }
     }
-  }
-  .navlinks a {
-    margin-right: 0;
-    margin-left: 1.3rem;
   }
 
   .active-nav-item {
@@ -126,6 +130,15 @@ export default function Header({ about }) {
               rel="noreferrer"
             >
               Github
+            </a>
+          </li>
+          <li>
+            <a
+              href="/uploads/mylesjeffery_resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Resume
             </a>
           </li>
         </ul>

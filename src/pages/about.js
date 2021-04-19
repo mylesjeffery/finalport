@@ -187,6 +187,15 @@ export default function About() {
             Github
           </a>
         </li>
+        <li>
+          <a
+            href="/uploads/mylesjeffery_resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Resume
+          </a>
+        </li>
       </ul>
     </Layout>
   )

@@ -4,7 +4,7 @@ tags:
   - UX
   - Brand
 title: Ordr
-date: 2021-04-01T20:36:38.557Z
+date: 2021-04-06T20:36:38.557Z
 description: "Branding and UX project - an app that streamlines the experience
   of going out, from getting in the door to ordering drinks. "
 feature: /img/ordrbillboard2.jpg

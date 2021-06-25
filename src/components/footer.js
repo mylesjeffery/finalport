@@ -6,7 +6,7 @@ const FooterContainer = styled.footer`
   margin-top: 3rem;
   display: flex;
   justify-content: space-between;
-
+  padding: 20px;
   ul {
     margin: 0;
     list-style-type: none;
@@ -15,6 +15,7 @@ const FooterContainer = styled.footer`
       margin-left: 1rem;
     }
     a {
+      font-size: 25px;
       color: #999999;
       text-decoration: none;
       &:hover {

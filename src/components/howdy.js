@@ -1,10 +1,19 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { Section } from './section'
 
 export default function Howdy() {
   return (
-    <>
-      <h2>Hey! I’m Myles.</h2>
+    <Section>
+      <div className="container">
+        <p>
+          Hey! I'm a graphic / UX designer and frontend developer. I create
+          distinctive digital experiences that evoke a company's personality
+          through empathic UX, engaging visual design, and JavaScript.{' '}
+        </p>
+      </div>
+
+      {/* <h2>Hey! I’m Myles.</h2>
       <p>
         I'm a digital product and brand designer who codes. I create distinctive
         digital experiences that evoke a company's personality through empathic
@@ -30,7 +39,7 @@ export default function Howdy() {
         work! <br></br>
         <br></br>I'd love to hear from you, so don't hesitate to{' '}
         <a href="mailto:mylesjeffery96@gmail.com">reach out</a>!
-      </p>
-    </>
+      </p> */}
+    </Section>
   )
 }

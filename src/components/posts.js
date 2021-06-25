@@ -2,22 +2,42 @@ import { Link, graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
+import { Section } from './section'
 
 const PostList = styled.ol`
+  position: relative;
+  z-index: 10;
+  background-color: #f5f5f5;
   list-style-type: none;
-  margin: 3rem 0;
   li {
     position: relative;
-    margin-bottom: 3rem;
-    a {
-      background: #f4f4f4;
-      color: hsla(0, 0%, 0%, 0.8);
-      display: block;
-      padding: 1rem;
-      text-decoration: none;
-      &:hover {
-        background: #e4e4e4;
+    .container {
+      padding-top: 0px;
+      height: 700px;
+      .sticky {
+        position: sticky;
+        top: 0px;
+        padding-top: 20px;
+        .projecttitle {
+          text-decoration: none;
+          &:hover {
+            color: #999999;
+          }
+        }
+
+        .link {
+          font-size: 25px;
+          text-decoration: none;
+          border-bottom: 2px solid #dcdcdc;
+          &:hover {
+            border-bottom: 2px solid #111111;
+          }
+        }
       }
+    }
+    .image {
+      padding: 0px;
+      margin-left: -20px;
     }
     h2 {
       margin-bottom: 0;
@@ -28,19 +48,13 @@ const PostList = styled.ol`
       font-style: italic;
       margin-top: 0.4rem;
     }
-    .tags {
-      position: absolute;
+    .tags span {
+      /* position: absolute;
       top: 1rem;
       right: 1rem;
-      margin: 0;
-      color: #777777;
-      @media (max-width: 800px) {
-        position: relative;
-        top: 0;
-        right: 0;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-      }
+      margin: 0; */
+      color: #999999;
+      font-size: 25px;
     }
     .description {
       margin-top: 1rem;
@@ -78,27 +92,40 @@ export default function Posts() {
     }
   `)
   return (
-    <PostList>
+    <PostList id="postlist">
       {data.allMarkdownRemark.edges.map(edge => (
         <li key={edge.node.frontmatter.slug}>
-          <Link to={edge.node.frontmatter.slug}>
-            <h2>{edge.node.frontmatter.title}</h2>
+          <Section>
+            <div className="container">
+              <div className="sticky">
+                <Link to={edge.node.frontmatter.slug} className="projecttitle">
+                  {edge.node.frontmatter.title}
+                </Link>
+                <p className="tags">
+                  {edge.node.frontmatter.tags.map((tag, i) => {
+                    if (edge.node.frontmatter.tags.length === i + 1) {
+                      return <span key={tag}>{tag}</span>
+                    } else {
+                      return <span key={tag}>{tag}, </span>
+                    }
+                  })}
+                </p>
+                <p className="description">
+                  {edge.node.frontmatter.description}
+                </p>
+                <br></br>
+                <Link to={edge.node.frontmatter.slug} className="link">
+                  View Project
+                </Link>
+              </div>
+            </div>
 
-            <p className="tags">
-              {edge.node.frontmatter.tags.map((tag, i) => {
-                if (edge.node.frontmatter.tags.length === i + 1) {
-                  return <span key={tag}>{tag}</span>
-                } else {
-                  return <span key={tag}>{tag}, </span>
-                }
-              })}
-            </p>
-            <p className="description">{edge.node.frontmatter.description}</p>
             <Img
               fluid={edge.node.frontmatter.feature.childImageSharp.fluid}
               alt={edge.node.frontmatter.title}
+              className="container"
             />
-          </Link>
+          </Section>
         </li>
       ))}
     </PostList>

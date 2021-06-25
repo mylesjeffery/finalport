@@ -6,9 +6,25 @@ import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import Head from '../components/head'
 
+import { Section } from '../components'
+
 const Main = styled.main`
+  position: relative;
+  z-index: 10;
+  background-color: #f5f5f5;
   .feature {
     margin-bottom: 3rem;
+  }
+  section {
+    display: flex;
+    .container {
+      padding: 20px;
+      width: 50vw;
+      position: relative;
+      p {
+        font-size: 25px;
+      }
+    }
   }
 
   .tags {
@@ -105,6 +121,11 @@ export default function Post({ data }) {
     <Layout>
       <Head title={data.markdownRemark.frontmatter.title} />
       <Main>
+        <Img
+          fluid={data.markdownRemark.frontmatter.feature.childImageSharp.fluid}
+          alt={data.markdownRemark.frontmatter.title}
+          className="feature"
+        />
         <h1>{data.markdownRemark.frontmatter.title}</h1>
         <p className="tags">
           {data.markdownRemark.frontmatter.tags.map((tag, i) => {
@@ -116,11 +137,6 @@ export default function Post({ data }) {
           })}
         </p>
         <p>{data.markdownRemark.frontmatter.description}</p>
-        <Img
-          fluid={data.markdownRemark.frontmatter.feature.childImageSharp.fluid}
-          alt={data.markdownRemark.frontmatter.title}
-          className="feature"
-        />
         <div
           dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
         ></div>

@@ -7,7 +7,7 @@ import { Layout, Head } from '../components'
 export default function About() {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "img_1966.jpg" }) {
+      file(relativePath: { eq: "IMG_35372.JPG" }) {
         childImageSharp {
           fluid {
             src

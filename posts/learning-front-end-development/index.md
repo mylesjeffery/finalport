@@ -9,7 +9,7 @@ description: Over the course of the COVID pandemic, I self-taught frontend
   experience in HTML/CSS, I learned JavaScript and React through building
   projects, ranging from a simple carousel to a Netflix clone built with React,
   Firebase, and styled-components.
-feature: /img/why-use-react-instead-of-javascript-html-and-css.jpeg
+feature: /img/netflix.jpg
 ---
 After graduating from Parsons in the spring of 2020 the world suddenly changed! The COVID lock down had started. No one was hiring graduates at that time, so I moved back home to the Bay Area.
 

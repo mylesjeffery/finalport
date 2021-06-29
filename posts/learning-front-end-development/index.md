@@ -13,20 +13,25 @@ feature: /img/netflix.jpg
 
 <section>
 <div class="container">
+<h2>Becoming A Front End Developer</h2>
+<p class="tags">Development</p>
+
+</div>
+
+<div class="container">
 <p>
 After graduating from Parsons in the spring of 2020 the world suddenly changed! The COVID lock down had started. No one was hiring graduates at that time, so I moved back home to the Bay Area.
-
+</p><p class="indent">
 I've always entertained the idea that I'd like to be able to take a project from concept, through ideation, design, flesh out the user flows and interactions; right through development and into production for real use by real end users. I already had a strong grounding in the design part of the process, but I didn't have the developer skills necessary to make the app. I decided to take advantage of the lockdown and set out to learn Front End Development.
-
+</p><p class="indent">
 I had taken a basic web development class in college that was mostly HTML and CSS, which I felt pretty comfortable with. I was also familiar with the platform Webflow, which is a website design tool that uses HTML and CSS, as I had designed my previous portfolio with it. However dynamic websites and applications that I want to build require javascript and a front end frameworks such as React, React Native, Angular, Vue etc, APIs and backend services. There is a lot to learn and many many tools and frameworks.
-
-I followed Scrimba's [Front End Developer Pathway](https://scrimba.com/learn/frontend), as I liked the ability to pause the screencast and dive right into the code in the browser, as opposed to having VS Code on one side of my screen copying everything the video was doing on the right. I felt that it gave me a better understanding of the code when I could engage with it directly and play with it.
-
+</p><p class="indent">
+I followed Scrimba's Frontend Developer Pathway, as I liked the ability to pause the screencast and dive right into the code in the browser, as opposed to having VS Code on one side of my screen copying everything the video was doing on the right. I felt that it gave me a better understanding of the code when I could engage with it directly and play with it.
+</p><p class="indent">
 These are a few projects I built along the way, and what I learned from each of them.
 
 </p>
 </div>
-<div class="container"></div>
 </section>
 
 <br></br>

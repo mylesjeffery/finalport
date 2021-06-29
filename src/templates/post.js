@@ -6,8 +6,6 @@ import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import Head from '../components/head'
 
-import { Section } from '../components'
-
 const Main = styled.main`
   position: relative;
   z-index: 10;
@@ -24,48 +22,45 @@ const Main = styled.main`
       p {
         font-size: 25px;
       }
-    }
-  }
+      a {
+        font-size: 25px;
+        text-decoration: none;
+        border-bottom: 2px solid #dcdcdc;
+        &:hover {
+          border-bottom: 2px solid #111111;
+        }
+      }
+      .indent {
+        text-indent: 30px;
+      }
+      .tags span {
+        color: #999999;
+        font-size: 25px;
+      }
+      .titlelink {
+        text-decoration: none;
+        border-bottom: none;
+        font-size: 30px;
+        &:hover {
+          color: #999999;
+          border-bottom: none;
+        }
+      }
 
-  .tags {
-    color: #777777;
-  }
-
-  .nextlink {
-    position: relative;
-    background: #f4f4f4;
-    color: hsla(0, 0%, 0%, 0.8);
-    display: block;
-    padding: 1rem;
-    text-decoration: none;
-    &:hover {
-      background: #e4e4e4;
-    }
-    h2 {
-      margin-bottom: 0;
-    }
-    .date {
-      color: #777777;
-      font-size: 1rem;
-      font-style: italic;
-      margin-top: 0.4rem;
-    }
-    .tags {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      margin: 0;
-      color: #777777;
-      @media (max-width: 800px) {
-        position: relative;
-        top: 0;
-        right: 0;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+      .homelink {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        text-decoration: none;
+        border-bottom: 2px solid #dcdcdc;
+        &:hover {
+          border-bottom: 2px solid #111111;
+        }
       }
     }
-    .description {
-      margin-top: 1rem;
+    .image {
+      padding: 0px;
+      margin-left: -20px;
     }
   }
 `
@@ -142,27 +137,41 @@ export default function Post({ data }) {
         ></div>
         {next ? (
           <>
-            <br></br>
-            <hr></hr>
-            <h2>Next Post: </h2>
-            <Link to={`/${next.frontmatter.slug}`} className="nextlink">
-              <h2>{next.frontmatter.title}</h2>
+            <section>
+              <div class="container">
+                <h2>Next Project:</h2>
+                <br></br>
+                <Link to={`/${next.frontmatter.slug}`} className="titlelink">
+                  {next.frontmatter.title}
+                </Link>
 
-              <p className="tags">
-                {next.frontmatter.tags.map((tag, i) => {
-                  if (next.frontmatter.tags.length === i + 1) {
-                    return <span key={tag}>{tag}</span>
-                  } else {
-                    return <span key={tag}>{tag}, </span>
-                  }
-                })}
-              </p>
-              <p className="description">{next.frontmatter.description}</p>
+                <p className="tags">
+                  {next.frontmatter.tags.map((tag, i) => {
+                    if (next.frontmatter.tags.length === i + 1) {
+                      return <span key={tag}>{tag}</span>
+                    } else {
+                      return <span key={tag}>{tag}, </span>
+                    }
+                  })}
+                </p>
+                <br></br>
+                <p className="description">{next.frontmatter.description}</p>
+                <br></br>
+                <Link to={`/${next.frontmatter.slug}`} className="link">
+                  View Project
+                </Link>
+                <br></br>
+                <br></br>
+                <Link to="/" className="homelink">
+                  ← Home
+                </Link>
+              </div>
               <Img
                 fluid={next.frontmatter.feature.childImageSharp.fluid}
                 alt={next.frontmatter.title}
+                className="container image"
               />
-            </Link>
+            </section>
           </>
         ) : (
           <>
